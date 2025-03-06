@@ -572,6 +572,12 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class249"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -599,6 +605,12 @@
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class249"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1528,7 +1540,14 @@
                             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class106"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1548,7 +1567,7 @@
     <!-- http://www.semanticweb.org/ontologies/cheese#Class14 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class14">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheep cheese</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheep Milk Cheese</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1874,12 +1893,6 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class1"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty4"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/cheese#Individual99"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -1889,9 +1902,29 @@
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
                                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class53"/>
                             </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class38"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class271"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/cheese#Individual99"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1964,7 +1997,7 @@
     <!-- http://www.semanticweb.org/ontologies/cheese#Class148 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class148">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brie</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brie Method Cheese</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2554,7 +2587,14 @@
                             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class149"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -3813,18 +3853,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class213"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class200"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -3835,14 +3863,19 @@
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class5"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
                                             <owl:Class>
-                                                <owl:complementOf>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty7"/>
-                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class43"/>
-                                                    </owl:Restriction>
-                                                </owl:complementOf>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class5"/>
+                                                    <owl:Class>
+                                                        <owl:complementOf>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty7"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class43"/>
+                                                            </owl:Restriction>
+                                                        </owl:complementOf>
+                                                    </owl:Class>
+                                                </owl:intersectionOf>
                                             </owl:Class>
                                         </owl:intersectionOf>
                                     </owl:Class>
@@ -3865,6 +3898,18 @@
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class213"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class200"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -3894,15 +3939,9 @@
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
                                             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class5"/>
-                                            <owl:Class>
-                                                <owl:complementOf>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty7"/>
-                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class43"/>
-                                                    </owl:Restriction>
-                                                </owl:complementOf>
-                                            </owl:Class>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class52"/>
                                         </owl:intersectionOf>
                                     </owl:Class>
                                 </owl:someValuesFrom>
@@ -4676,6 +4715,29 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class1"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class107"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class18"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class244"/>
             </owl:Restriction>
@@ -4696,22 +4758,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty4"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/cheese#Individual44"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class107"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class18"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4812,7 +4858,7 @@
     <!-- http://www.semanticweb.org/ontologies/cheese#Class27 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class27">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stilton</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stilton Method Cheese</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -5584,7 +5630,14 @@
                             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class114"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class18"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class18"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty8"/>
@@ -5968,15 +6021,8 @@
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class3"/>
-                                            <owl:Class>
-                                                <owl:complementOf>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty7"/>
-                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class43"/>
-                                                    </owl:Restriction>
-                                                </owl:complementOf>
-                                            </owl:Class>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class18"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
                                         </owl:intersectionOf>
                                     </owl:Class>
                                 </owl:someValuesFrom>
@@ -6047,6 +6093,12 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class1"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/cheese#Individual48"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -6054,7 +6106,14 @@
                             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class102"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty8"/>
@@ -6081,12 +6140,6 @@
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty4"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/cheese#Individual48"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -6635,7 +6688,14 @@
                             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class118"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class18"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class18"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty6"/>
@@ -1275392,7 +1275452,14 @@
                             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class353"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1275417,7 +1275484,14 @@
                             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class352"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1275431,7 +1275505,7 @@
     <!-- http://www.semanticweb.org/ontologies/cheese#Class358 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class358">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reblochon Savoie </rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reblochon Savoie</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class1"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1275544,7 +1275618,14 @@
                             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class262"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1275728,6 +1275809,84 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class368 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class368">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soft Blue British Cheese</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class126"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty4"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:oneOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Individual10"/>
+                                        </owl:oneOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty5"/>
+                                        <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/cheese#Individual10"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class369 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class369">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rebel Nun</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class120"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class38"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class271"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/cheese#Individual99"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/cheese#Class37 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class37">
@@ -1275737,11 +1275896,329 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class370 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class370">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organic Production</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class36"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class371 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organic Milk</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class2"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class370"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class372 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class372">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organic Cheese</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class102"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class373 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class373">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organic Cow Milk Cheese</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class17"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class372"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class374 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class374">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unpasturised Sheep Milk</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class5"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class52"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class375 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class375">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stichelton</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class105"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class18"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class213"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class35"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class220"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class215"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/cheese#Individual18"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class376 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class376">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organic unpasturised Cow Milk Cheese</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class373"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class54"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class377 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class377">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organic Pasturised Cow Milk Cheese</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class373"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class55"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class378 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class378">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organic Sheep Milk Cheese</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class14"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class372"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class379 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class379">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seven Sisters Cheese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/cheese#Individual51"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class102"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class19"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class5"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty8"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class1"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class194"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty6"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class381"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/cheese#Class38 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class38">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Washing</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class36"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class380 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class380">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-Organic Milk</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class2"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class370"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class381 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class381">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seaweed Wrapping</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class300"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class382 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class382">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Double Worcester</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/cheese#Individual52"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class110"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class53"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1275818,7 +1276295,7 @@
     <!-- http://www.semanticweb.org/ontologies/cheese#Class45 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class45">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firm style</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firm Style</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class12"/>
     </owl:Class>
     
@@ -1276143,12 +1276620,6 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class1"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class218"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -1276159,15 +1276630,8 @@
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class3"/>
-                                            <owl:Class>
-                                                <owl:complementOf>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty7"/>
-                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class43"/>
-                                                    </owl:Restriction>
-                                                </owl:complementOf>
-                                            </owl:Class>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class53"/>
                                         </owl:intersectionOf>
                                     </owl:Class>
                                 </owl:someValuesFrom>
@@ -1276175,6 +1276639,12 @@
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class218"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1276260,36 +1276730,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class106"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class3"/>
-                                            <owl:Class>
-                                                <owl:complementOf>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty7"/>
-                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class43"/>
-                                                    </owl:Restriction>
-                                                </owl:complementOf>
-                                            </owl:Class>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class198"/>
             </owl:Restriction>
@@ -1276304,6 +1276744,29 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class215"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty11"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class106"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class18"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1276643,7 +1277106,7 @@
     <!-- http://www.semanticweb.org/ontologies/cheese#Class69 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class69">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">York Blue</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yorkshire Blue</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class1"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1276660,7 +1277123,14 @@
                             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class120"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty15"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class3"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class3"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class371"/>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty6"/>
@@ -1276834,7 +1277304,7 @@
     <!-- http://www.semanticweb.org/ontologies/cheese#Class73 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class73">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camembert</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camembert Method Cheese</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1278036,6 +1278506,26 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/cheese#Individual50">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class23"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ireland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Individual51 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/cheese#Individual51">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class24"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">West Sussex</rdfs:label>
+        <ObjectProperty5 rdf:resource="http://www.semanticweb.org/ontologies/cheese#Individual3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Individual52 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/cheese#Individual52">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class24"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Worcestershire</rdfs:label>
+        <ObjectProperty5 rdf:resource="http://www.semanticweb.org/ontologies/cheese#Individual3"/>
     </owl:NamedIndividual>
     
 
