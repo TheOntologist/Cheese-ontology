@@ -2767,6 +2767,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class244"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class242"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2815,12 +2821,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class198"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/cheese#ObjectProperty16"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class243"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3567,7 +3567,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class198">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buttery Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class482"/>
     </owl:Class>
     
 
@@ -3726,7 +3726,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class203">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yeasty Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class200"/>
     </owl:Class>
     
 
@@ -3775,7 +3775,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class207">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farmyard Savoury</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class200"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class208"/>
     </owl:Class>
     
 
@@ -3850,7 +3849,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class211">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caramel Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class213"/>
     </owl:Class>
     
 
@@ -3859,7 +3858,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class212">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smokey Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class200"/>
     </owl:Class>
     
 
@@ -3886,7 +3885,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class215">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toasty Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class200"/>
     </owl:Class>
     
 
@@ -3895,7 +3894,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class216">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yoghurty Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class482"/>
     </owl:Class>
     
 
@@ -4375,7 +4374,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class240">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Earthy Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class200"/>
     </owl:Class>
     
 
@@ -5432,7 +5431,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class277">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malty Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class200"/>
     </owl:Class>
     
 
@@ -7306,7 +7305,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class323">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milky Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class482"/>
     </owl:Class>
     
 
@@ -8401,7 +8400,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class345">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fudgey Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class213"/>
     </owl:Class>
     
 
@@ -10094,7 +10093,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class393">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brothy Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class200"/>
     </owl:Class>
     
 
@@ -10158,7 +10157,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class395">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marmite Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class200"/>
     </owl:Class>
     
 
@@ -10176,7 +10175,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class397">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fresh Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class11"/>
     </owl:Class>
     
 
@@ -10439,7 +10438,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class405">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clean Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class476"/>
     </owl:Class>
     
 
@@ -10448,7 +10447,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class406">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Butterscotch Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class213"/>
     </owl:Class>
     
 
@@ -13149,7 +13148,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class468">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biscuity Flavour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class200"/>
     </owl:Class>
     
 
@@ -13656,6 +13655,15 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/cheese#Class482 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/cheese#Class482">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dairy Flavour</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/cheese#Class196"/>
     </owl:Class>
     
 
@@ -16109,6 +16117,18 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class173"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class180"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class191"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class192"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class204"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class205"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class300"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class194"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class199"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class214"/>
@@ -16126,18 +16146,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class51"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class8"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class9"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class173"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class180"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class191"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class192"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class204"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class205"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/cheese#Class300"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
