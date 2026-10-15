@@ -1,0 +1,2793 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/sausage#"
+     xml:base="http://www.semanticweb.org/ontologies/sausage"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:sausage="http://www.semanticweb.org/ontologies/sausage#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/sausage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#ObjectProperty1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#ObjectProperty2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#ObjectProperty3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#ObjectProperty4 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has origin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#ObjectProperty5 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/sausage#ObjectProperty5">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#ObjectProperty6 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has input</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty7"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#ObjectProperty7 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/sausage#ObjectProperty7">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">may have input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sausage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class56"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class10">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bratwurst</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty5"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class61"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class100 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class100">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardamon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class101 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class101">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mace</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class102 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class102">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ginger</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class103 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class103">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lemon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class13"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class104 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class104">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">German Sausage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual4"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class105 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class105">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">British Sausage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:oneOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Individual2"/>
+                                        </owl:oneOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                                        <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual2"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class106 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class106">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pinkel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class23"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class47"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class50"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class80"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class81"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class112"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class41"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class87"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class107 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class107">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pig Brain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class39"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class108 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class108">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sugar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class13"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class109 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class109">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class13"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class11 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class11">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood Sausage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class25"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class110 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class110">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brandy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class13"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class111 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class111">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clove</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class112 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class112">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beef Suet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class52"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class113 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class113">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bregenwurst</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class107"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class12 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class12">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Pudding</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class27"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class25"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class41"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual1"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class13 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class13">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingredient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class56"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class14 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class14">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haggis</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class27"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class3"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class15 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class15">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saucissons</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class26"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class16 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class16">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italian Pork Salami</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class26"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class44"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class66"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class17 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class17">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chorizo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class18 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class18">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fresh Sausage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class19 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class19">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cured Sausage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class2">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal Product</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class13"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class20 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class20">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smoked Sausage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class23"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class21 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class21">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sausage Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class56"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class22 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class22">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class21"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class23 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class23">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smoking</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class24 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class24">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class25 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class25">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pig Blood</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class35"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class26 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class26">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drying</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class27 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class27">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boiling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class73"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class28 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class28">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boiled Sausage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class27"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class29 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class29">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frankfurter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class27"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty5"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class61"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class3">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamb</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class36"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class30 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class30">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pig Liver</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class35"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class31 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class31">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pork Sausage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class32 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class32">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fresh Pork Sausage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class18"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class31"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class33 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class33">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cured Pork Sausage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class19"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class31"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class34 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class34">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class56"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class35 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class35">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pig</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class34"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class36 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class36">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheep</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class34"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class37 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class37">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cattle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class34"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class38 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class38">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class34"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class39 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class39">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pig Product</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class2"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class35"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pork</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class35"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class40 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class40">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rusk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class13"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class41 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class41">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pork Fat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class39"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class42 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class42">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class56"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class43 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class43">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">British Plain Sausage</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class40"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty5"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class60"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual2"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class44 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class44">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fermenting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class45 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class45">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seasoning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class13"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class46 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class46">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class68"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class47 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class47">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Pepper</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class48 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class48">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paprika</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class49 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class49">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chilli</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class5">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beef</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class37"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class50 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class50">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class13"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class51 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class51">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class37"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class52 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class52">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cattle Product</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class2"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class37"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class53 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class53">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cayenne</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class54 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class54">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thyme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class68"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class55 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class55">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutmeg</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class56 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class56">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domain Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class57 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class57">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class56"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class58 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class58">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grain Size</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class57"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class59 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class59">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coarse Grain Size</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class58"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class6">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Venison</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class38"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class60 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class60">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium Grain Size</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class58"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class61 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class61">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fine Grain Size</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class58"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class62 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sausage Making</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class21"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class63 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class63">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meat Preparation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class21"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class64 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class64">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chopping</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class63"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class65 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class65">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mincing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class63"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class66 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class66">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Garlic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class45"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class67 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class67">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hungarian Smoked Salami</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class23"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class26"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class44"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class47"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class48"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class68 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class68">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Herb</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class45"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class69 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class69">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spice</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class45"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class7">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lorne Sausage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class40"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class5"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class70 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class70">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fennel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class71 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class71">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Herby Sausage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class68"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class72 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class72">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spicey Sausage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class73 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class73">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cooking</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class21"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class74 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class74">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frying</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class73"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class75 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class75">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baking</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class73"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class76 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class76">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mortadella Bologna</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class73"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class77 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class77">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cooked Sausage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class73"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class78 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class78">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salsiccia fresca al peperoncino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class49"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class66"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class79 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class79">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White Pepper</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class8">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cumberland Sausage</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class40"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class47"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class53"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class54"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class55"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class64"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty5"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class59"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class80 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class80">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Onion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class13"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class81 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class81">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oatmeal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class13"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class82 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class82">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheep Product</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class2"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class36"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class83 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class83">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamb Heart</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class2"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class36"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class84 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class84">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamb Lung</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class2"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class36"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class85 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class85">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamb Liver</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class2"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty3"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class36"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class86 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class86">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saveloy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class27"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class40"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class46"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class79"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class41"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class87 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class87">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class39"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class88 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class88">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ahle Wurst</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class23"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class26"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class47"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class50"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class87"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty7"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class108"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty7"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class109"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty7"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class110"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty7"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class111"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty7"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class55"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty7"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class66"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty7"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class92"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>garlic, nutmeg, cloves, rumcumin </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class89 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class89">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mustard Seed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class9">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lincolnshire Sausage</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class22"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class40"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class46"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty5"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class60"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual1"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class90 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class90">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blanching</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class73"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class91 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class91">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bierwurst</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class23"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class26"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class90"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class47"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class48"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class66"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class89"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class92 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class92">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cumin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class93 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class93">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allspice</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class94 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class94">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marjoram</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class68"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class95 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class95">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pig Lung</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class39"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class96 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class96">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kohlwurst</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class23"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class54"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class80"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class89"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class93"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class94"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class41"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class95"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class97 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class97">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regensburger Wurst</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class23"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty2"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class27"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class50"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class69"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class64"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class98 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class98">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weißwurst</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class62"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class100"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class101"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class102"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class103"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class51"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class80"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class99"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class4"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty1"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class65"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/sausage#ObjectProperty4"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Class99 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/sausage#Class99">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parsley</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class68"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Individual1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/sausage#Individual1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class42"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</rdfs:label>
+        <ObjectProperty3 rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Individual10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/sausage#Individual10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class42"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Individual11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/sausage#Individual11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class42"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Argentina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Individual12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/sausage#Individual12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class42"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">united States of America</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Individual2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/sausage#Individual2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class42"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United Kingdom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Individual3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/sausage#Individual3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class42"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scotland</rdfs:label>
+        <ObjectProperty3 rdf:resource="http://www.semanticweb.org/ontologies/sausage#Individual2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Individual4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/sausage#Individual4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class42"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Germany</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Individual5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/sausage#Individual5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class42"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">France</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Individual6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/sausage#Individual6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class42"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Italy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Individual7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/sausage#Individual7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class42"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Individual8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/sausage#Individual8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class42"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portugal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/sausage#Individual9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/sausage#Individual9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/sausage#Class42"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hungary</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class35"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class36"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class37"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class38"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class27"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class74"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/sausage#Class75"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1787) http://owlapi.sourceforge.net -->
+
